@@ -2,38 +2,28 @@ import streamlit as st
 import random
 from datetime import datetime
 
-st.markdown(
-    """
+# --- ページ全体の背景・文字色をCSSで設定 ---
+st.markdown("""
     <style>
-        body {
-            background-color: #f0f8ff;
-        }
-        .stApp {
-            background-color: #f0f8ff;
-        }
-        .stButton>button {
-            background-color: #0288d1;
-            color: white;
-            border-radius: 10px;
-            padding: 0.5em 1em;
-            font-weight: bold;
-        }
-        .stButton>button:hover {
-            background-color: #0277bd;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            color: #01579b;
-        }
-        .stMarkdown {
-            color: #004d6d;
-        }
+    body {
+        background-color: #f0f8ff;
+    }
+    .main {
+        background-color: #f0f8ff;
+        color: #003366;
+    }
+    .stButton>button {
+        background-color: #3399ff;
+        color: white;
+        font-weight: bold;
+    }
     </style>
-    """,
-    unsafe_allow_html=True
-)
+""", unsafe_allow_html=True)
 
+# 運勢リスト
 omikuji_list = ["大吉", "吉", "中吉", "小吉", "凶"]
 
+# 運勢ごとのメッセージ
 omikuji_messages = {
     "大吉": "今日は最高！何をやってもうまくいくよ！",
     "吉": "いいかんじ！色々挑戦してみよう！",
@@ -42,6 +32,7 @@ omikuji_messages = {
     "凶": "今日は大注意！落ち着いて行動しよう～",
 }
 
+# おすすめ料理（パスをすべて images/ に変更）
 meals = [
     {"name": "カレーライス", "image": "images/pic1.jpg"},
     {"name": "ラーメン", "image": "images/pic2.jpg"},
@@ -55,6 +46,7 @@ meals = [
     {"name": "焼肉", "image": "images/pic10.jpg"},
 ]
 
+# スイーツ（パスをすべて images/ に変更）
 sweets = [
     {"name": "ショートケーキ", "image": "images/sweets1.jpg"},
     {"name": "プリン", "image": "images/sweets2.jpg"},
@@ -63,6 +55,7 @@ sweets = [
     {"name": "シュークリーム", "image": "images/sweets5.jpg"},
 ]
 
+# セッションの初期化
 if "history" not in st.session_state:
     st.session_state.history = []
 if "show_result" not in st.session_state:
@@ -93,10 +86,10 @@ def draw_omikuji():
     return result
 
 def main():
-    st.title("♪ 今日の運勢 ♬♩ ")
+    st.title("🎋 今日の運勢 🎋")
 
     if not st.session_state.show_result:
-        st.write("↓↓ボタンを押しておみくじを引こう！")
+        st.write("👇 ボタンを押しておみくじを引こう！")
         if st.button("おみくじを引く"):
             result = draw_omikuji()
             st.session_state.current_result = result
@@ -112,7 +105,7 @@ def main():
         st.image(result["meal"]["image"], width=300)
 
         if result["sweets"] is not None:
-            st.write("🍰 とくべつスイーツ♡ 🍰")
+            st.write("🍰 +αスイーツ♪ 🍰")
             st.write(f"- {result['sweets']['name']}")
             st.image(result["sweets"]["image"], width=200)
 
