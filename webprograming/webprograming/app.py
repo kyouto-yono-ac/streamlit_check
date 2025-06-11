@@ -32,27 +32,27 @@ omikuji_messages = {
     "凶": "今日は大注意！落ち着いて行動しよう～",
 }
 
-# おすすめ料理（パスをすべて images/ に変更）
+# おすすめ料理（パスをすべて webprograming/webprograming/images/ に変更）
 meals = [
-    {"name": "カレーライス", "image": "images/pic1.jpg"},
-    {"name": "ラーメン", "image": "images/pic2.jpg"},
-    {"name": "ハンバーグ", "image": "images/pic3.jpg"},
-    {"name": "寿司", "image": "images/pic4.jpg"},
-    {"name": "おでん", "image": "images/pic5.jpg"},
-    {"name": "肉じゃが", "image": "images/pic6.jpg"},
-    {"name": "天ぷら", "image": "images/pic7.jpg"},
-    {"name": "おそば", "image": "images/pic8.jpg"},
-    {"name": "パスタ", "image": "images/pic9.jpg"},
-    {"name": "焼肉", "image": "images/pic10.jpg"},
+    {"name": "カレーライス", "image": "webprograming/webprograming/images/pic1.jpg"},
+    {"name": "ラーメン", "image": "webprograming/webprograming/images/pic2.jpg"},
+    {"name": "ハンバーグ", "image": "webprograming/webprograming/images/pic3.jpg"},
+    {"name": "寿司", "image": "webprograming/webprograming/images/pic4.jpg"},
+    {"name": "おでん", "image": "webprograming/webprograming/images/pic5.jpg"},
+    {"name": "肉じゃが", "image": "webprograming/webprograming/images/pic6.jpg"},
+    {"name": "天ぷら", "image": "webprograming/webprograming/images/pic7.jpg"},
+    {"name": "おそば", "image": "webprograming/webprograming/images/pic8.jpg"},
+    {"name": "パスタ", "image": "webprograming/webprograming/images/pic9.jpg"},
+    {"name": "焼肉", "image": "webprograming/webprograming/images/pic10.jpg"},
 ]
 
-# スイーツ（パスをすべて images/ に変更）
+# スイーツ（パスをすべて webprograming/webprograming/images/ に変更）
 sweets = [
-    {"name": "ショートケーキ", "image": "images/sweets1.jpg"},
-    {"name": "プリン", "image": "images/sweets2.jpg"},
-    {"name": "チョコクッキー", "image": "images/sweets3.jpg"},
-    {"name": "ソフトクリーム", "image": "images/sweets4.jpg"},
-    {"name": "シュークリーム", "image": "images/sweets5.jpg"},
+    {"name": "ショートケーキ", "image": "webprograming/webprograming/images/sweets1.jpg"},
+    {"name": "プリン", "image": "webprograming/webprograming/images/sweets2.jpg"},
+    {"name": "チョコクッキー", "image": "webprograming/webprograming/images/sweets3.jpg"},
+    {"name": "ソフトクリーム", "image": "webprograming/webprograming/images/sweets4.jpg"},
+    {"name": "シュークリーム", "image": "webprograming/webprograming/images/sweets5.jpg"},
 ]
 
 # セッションの初期化
