@@ -43,24 +43,24 @@ omikuji_messages = {
 }
 
 meals = [
-    {"name": "カレーライス", "image": "pic1.jpg"},
-    {"name": "ラーメン", "image": "pic2.jpg"},
-    {"name": "ハンバーグ", "image": "pic3.jpg"},
-    {"name": "寿司", "image": "pic4.jpg"},
-    {"name": "おでん", "image": "pic5.jpg"},
-    {"name": "肉じゃが", "image": "pic6.jpg"},
-    {"name": "天ぷら", "image": "pic7.jpg"},
-    {"name": "おそば", "image": "pic8.jpg"},
-    {"name": "パスタ", "image": "pic9.jpg"},
-    {"name": "焼肉", "image": "pic10.jpg"},
+    {"name": "カレーライス", "image": "images/pic1.jpg"},
+    {"name": "ラーメン", "image": "images/pic2.jpg"},
+    {"name": "ハンバーグ", "image": "images/pic3.jpg"},
+    {"name": "寿司", "image": "images/pic4.jpg"},
+    {"name": "おでん", "image": "images/pic5.jpg"},
+    {"name": "肉じゃが", "image": "images/pic6.jpg"},
+    {"name": "天ぷら", "image": "images/pic7.jpg"},
+    {"name": "おそば", "image": "images/pic8.jpg"},
+    {"name": "パスタ", "image": "images/pic9.jpg"},
+    {"name": "焼肉", "image": "images/pic10.jpg"},
 ]
 
 sweets = [
-    {"name": "ショートケーキ", "image": "sweets1.jpg"},
-    {"name": "プリン", "image": "sweets2.jpg"},
-    {"name": "チョコクッキー", "image": "sweets3.jpg"},
-    {"name": "ソフトクリーム", "image": "sweets4.jpg"},
-    {"name": "シュークリーム", "image": "sweets5.jpg"},
+    {"name": "ショートケーキ", "image": "images/sweets1.jpg"},
+    {"name": "プリン", "image": "images/sweets2.jpg"},
+    {"name": "チョコクッキー", "image": "images/sweets3.jpg"},
+    {"name": "ソフトクリーム", "image": "images/sweets4.jpg"},
+    {"name": "シュークリーム", "image": "images/sweets5.jpg"},
 ]
 
 if "history" not in st.session_state:
